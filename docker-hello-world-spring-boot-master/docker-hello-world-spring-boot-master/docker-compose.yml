@@ -5,5 +5,8 @@ services:
     build: 
       context: ./
       dockerfile: Dockerfile
+    environment:
+	    MESSAGE = HI ENV 
     ports:
       - 8080:8080
+    
