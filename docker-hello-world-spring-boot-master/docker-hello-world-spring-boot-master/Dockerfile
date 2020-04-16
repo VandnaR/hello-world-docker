@@ -2,6 +2,9 @@
 
 FROM maven:3.5.2-jdk-8-alpine AS maven_build
 
+ENV an_env_var=$MESSAGE
+# if not overridden, that value of an_env_var will be available to your containers!
+
 COPY pom.xml /tmp/
 
 COPY src /tmp/src/

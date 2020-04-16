@@ -6,6 +6,6 @@ services:
       context: ./
       dockerfile: Dockerfile
     environment:
-      - MESSAGE: Hello
+      - MESSAGE=Hello
     ports:
       - 8080:8080
